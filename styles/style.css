@@ -1,0 +1,153 @@
+body {
+   font: 14px Tahoma,Arial,Helvetica,sans-serif;
+}
+body:after{
+	content:"";
+	display: table;
+	clear: both;
+	float:left;
+}
+
+header,nav,section,article,aside,footer,hgroup { 
+display: block;
+}
+
+
+/* Menu */
+
+menu.dropdown, menu.dropdown li, menu.dropdown menu {
+    list-style: none outside none;
+    margin: 0;
+    padding: 0;
+}
+menu.dropdown {
+    float: left;
+    position: fixed;
+    z-index: 597;
+	top:0px;
+	left:auto;
+	right:auto;
+	background-color:lightblue;
+	width:100%;
+}
+menu.dropdown li {
+    float: left;
+    line-height: 1.3em;
+    min-height: 1px;
+    vertical-align: middle;
+}
+menu.dropdown li.hover, menu.dropdown li:hover {
+    cursor: default;
+    position: relative;
+    z-index: 599;
+}
+menu.dropdown menu {
+    left: 0;
+    position: absolute;
+    top: 100%;
+    visibility: hidden;
+    width: 100%;
+    z-index: 598;
+}
+menu.dropdown menu li {
+    float: none;
+	background-color:lightblue;
+}
+menu.dropdown menu menu {
+    left: 99%;
+    top: 1px;
+}
+menu.dropdown li:hover > menu {
+    visibility: visible;
+}
+menu.dropdown li.dir {
+	width: 20%;
+	font-size:14px;
+}
+
+menu.dropdown li a {
+	color:darkblue;
+	font-variant: small-caps;
+	font-weight: bold;
+	text-decoration: none;
+	padding: 5px;
+	display:block;
+	
+}
+menu.dropdown li a:hover {
+   color:darkorange;
+}
+
+/* footer */
+footer{
+	position: fixed;
+	bottom:0;
+	background-color:lightblue;
+	color:darkblue;
+	width:100%;
+	padding:5px;
+}
+
+footer menu{
+	margin:0px;
+}
+footer li{
+	list-style: none outside none;
+	float: left;
+	margin-right: 25px;
+}
+footer li a{
+	text-decoration: none;
+	color:darkorange;
+	font-weight: bold;
+}
+/* form */
+#formSection{
+	background-color:white;
+}
+
+.formInd{
+	position:fixed;
+	background-color:white;
+	position: fixed;
+    top: 25px;
+	padding-top:5px;
+    width: 100%;
+}
+
+.highlight{
+	display: block;
+    font-weight: bold;
+    margin-top: 55px;
+}
+
+/* results */
+
+#resultSection{
+	margin-top:50px;
+	margin-bottom:40px;
+	float:left;
+	width:100%;
+}
+
+.resultsTable td {
+    padding-left: 8px;
+}
+.resultsTable{
+    float:left;
+	margin-top:10px;
+	margin-left:10px;
+	border:3px solid #6495ed;
+	border-collapse:collapse;
+}
+
+.detailsError{
+	background-color:red;
+}
+
+.resultsTable caption{
+	font-weight:bold;
+	font-variant:small-caps;
+	background-color: lightblue;
+	color: darkblue;
+}
